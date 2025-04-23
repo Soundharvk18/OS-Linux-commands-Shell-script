@@ -339,10 +339,11 @@ seq 3 | sed '2a hello'
 seq 2 | sed '2i hello'
 ## OUTPUT
 ![image1](img/image38.png)	
-
+~~~
 
 seq 10 | sed '2,9c hello'
-## OUTPUT!
+~~~
+## OUTPUT
 ![image1](img/image39.png)	
 
 
@@ -518,13 +519,8 @@ bash: ./one: Permission denied
 echo $?
 ## OUTPUT
 ![image1](img/image52.png)
- 
-abcd
- 
-echo $?
- ## OUTPUT!
+## OUTPUT
  [image1](img/image53.png)
-
 
  
 # mis-using string comparisons
