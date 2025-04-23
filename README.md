@@ -42,23 +42,29 @@ s.n. dasgupta
 ### Display the content of the files
 cat < file1
 ## OUTPUT
+![image1](img/image1.png)
+
 
 
 
 cat < file2
 ## OUTPUT
+![image1](img/image2.png)
 
 
 # Comparing Files
 cmp file1 file2
 ## OUTPUT
+![image1](img/image3.png)
  
 comm file1 file2
  ## OUTPUT
+ ![image1](img/image4.png)
 
  
 diff file1 file2
 ## OUTPUT
+![image1](img/image5.png)
 
 
 #Filters
@@ -82,17 +88,20 @@ cat > file22
 
 cut -c1-3 file11
 ## OUTPUT
+![image1](img/image6.png)
 
 
 
 
 cut -d "|" -f 1 file22
 ## OUTPUT
+![image1](img/image7.png)
 
 
 
 cut -d "|" -f 2 file22
 ## OUTPUT
+![image1](img/image8.png)
 
 
 cat < newfile 
@@ -101,45 +110,55 @@ Hello world
 hello world
 ^d
 ````
+```
 cat > newfile 
 Hello world
 hello world
  
 grep Hello newfile 
+
 ## OUTPUT
+![image1](img/image9.png)
+
 
 
 
 grep hello newfile 
 ## OUTPUT
+![image1](img/image10.png)
+
 
 
 
 
 grep -v hello newfile 
 ## OUTPUT
+![image1](img/image11.png)
+
 
 
 
 cat newfile | grep -i "hello"
 ## OUTPUT
+![image1](img/image12.png)
+
 
 
 
 
 cat newfile | grep -i -c "hello"
 ## OUTPUT
+![image1](img/image13.png)
 
 
 
-
-grep -R ubuntu /etc
-## OUTPUT
 
 
 
 grep -w -n world newfile   
 ## OUTPUT
+![image1](img/image14.png)
+
 
 
 cat < newfile 
@@ -154,7 +173,7 @@ Linux is best in this World
 
 cat > newfile
 ```
-Hello world
+Hello worldf
 hello world
 Linux is world number 1
 Unix is predecessor
@@ -163,60 +182,74 @@ Linux is best in this World
  ```
 egrep -w 'Hello|hello' newfile 
 ## OUTPUT
+![image1](img/image15.png)
+
 
 
 
 egrep -w '(H|h)ello' newfile 
 ## OUTPUT
+![image1](img/image16.png)
+
 
 
 
 egrep -w '(H|h)ell[a-z]' newfile 
 ## OUTPUT
+![image1](img/image17.png)
 
 
 
 
 egrep '(^hello)' newfile 
 ## OUTPUT
+![image1](img/image118.png)
+
 
 
 
 egrep '(world$)' newfile 
 ## OUTPUT
+![image1](img/image19.png)
 
 
 
 egrep '(World$)' newfile 
 ## OUTPUT
+![image1](img/image20.png)
 
 
 egrep '((W|w)orld$)' newfile 
 ## OUTPUT
+![image1](img/image21.png)
 
 
 
 egrep '[1-9]' newfile 
 ## OUTPUT
+![image1](img/image22.png)
 
 
 
 egrep 'Linux.*world' newfile 
 ## OUTPUT
+![image1](img/image23.png)
 
 
 egrep 'Linux.*World' newfile 
 ## OUTPUT
+![image1](img/image24.png)
 
 
 egrep l{2} newfile
 ## OUTPUT
+![image1](img/image25.png)	
 
 
 
 egrep 's{1,2}' newfile
 ## OUTPUT 
-
+![image1](img/image26.png)	
 
 cat > file23
 ```
